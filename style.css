@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  color: #1e293b;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #0b4f6c;
+  color: #ffffff;
+  padding: 20px 24px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.45rem;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  background-color: #1565c0;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  background-color: #1e88e5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  color: #0b4f6c;
+  margin-bottom: 10px;
+}
+
+#tentang {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+#tentang img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #94a3b8;
+  flex-shrink: 0;
+}
+
+#tentang .isi p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+#tentang .isi a {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#tentang .isi a:hover {
+  text-decoration: underline;
+}
+
+#rundown {
+  display: flex;
+  gap: 16px;
+}
+
+.kartu {
+  flex: 1;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.kartu ul,
+.kartu ol {
+  padding-left: 20px;
+  font-size: 0.95rem;
+}
+
+.kartu li {
+  margin-bottom: 6px;
+}
+
+#daftar form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grup-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.grup-input label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.grup-input input,
+.grup-input select {
+  padding: 9px 12px;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
+
+.grup-input input:focus,
+.grup-input select:focus {
+  outline: 2px solid #0284c7;
+  border-color: #0284c7;
+}
+
+.baris-bawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.cek-setuju {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #0b4f6c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #083b52;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #e2e8f0;
+  color: #475569;
+  text-align: center;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 680px) {
+  #tentang,
+  #rundown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #tentang img {
+    width: 100%;
+    height: 180px;
+  }
+}
